@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versity - 3D Modelle</title>
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="test.html" class="logo">Versity</a>
+                <button class="nav-toggle">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="test.html">Home</a></li>
+                        <li><a href="stadt.html">Städte</a></li>
+                        <li><a href="regionen.html">Bundesländer</a></li>
+                        <li><a href="about.html">About</a></li>
+
+
+                    </ul>
+                </nav>
+                <div class="order-icon">
+                    <img id="openModal" class="icon" src="img/shopping-bag.png" alt="Order Icon">
+                    <span id="orderCount" class="order-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button">&times;</button>
+            
+            <h2>Ihr Warenkorb</h2>
+            <div id="orderList" class="order-list"></div>
+            <p id="orderTotal" class="order-total">Summe: 0,00 €</p>
+            
+            <div class="modal-buttons">
+                <button id="continueOrder" class="btn btn-primary">Zur Kasse</button>
+                <button id="clearOrders" class="btn btn-danger">Warenkorb leeren</button>
+            </div>
+        </div>
+    </div>
+
+<style>
+
+</style>    <section class="container products-selection">
+        <h2 class="section-title">Ausgewählte Modelle</h2>
+        
+        
+        <div class="product-selection">
+            <!-- Product 1 -->
+
+                <a href="cities.html?region=Bayern" class="region-card">
+                    <img src="./img/Bayern_silhouette.svg  " alt="" >
+
+                    <h2>Bayern</h2>
+                </a>
+                <a href="cities.html?region=Baden-Württemberg" class="region-card">
+                    <img src="./img/Baden Württemberg_silhouette.svg" alt="" >
+
+                    <h2>Baden-Württemberg</h2>
+                </a>
+
+                <a href="cities.html?region=Brandenburg" class="region-card">
+                    <img src="./img/Brandenburg_silhouette_ohne Berlin.svg" alt="" >
+
+                    <h2>Brandenburg</h2>
+                </a>
+                <a href="cities.html?region=Hessen" class="region-card">
+                    <img src="./img/Hessen_silhouette.svg   " alt="" >
+
+                    <h2>Hessen</h2>
+                </a>
+                <a href="cities.html?region=Meckllenburg-Vorpommern" class="region-card">
+                    <img src="./img/Mecklenburg-Vorpommern_silhouette.svg" alt="" >
+
+                    <h2>Meckllenburg-Vorpommern</h2>
+                </a>
+                <a href="cities.html?region=Niederdachsen" class="region-card">
+                    <img src="./img/Niedersachsen_silhouette mit Bremen.svg" alt="" >
+
+                    <h2>Niederdachsen</h2>
+                </a>
+                <a href="cities.html?region=Nordrhein-Westfalen" class="region-card">
+                    <img src="./img//Nordrhein-Westfalen_silhouette.svg" alt="" >
+
+                    <h2>Nordrhein-Westfalen</h2>
+                </a>
+                <a href="cities.html?region=Rheinland-Pfalz" class="region-card">
+                    <img src="./img/Rheinland-Pfalz_silhouette.svg" alt="" >
+
+                    <h2>Rheinland-Pfalz</h2>
+                </a>
+                <a href="cities.html?region=Saarland" class="region-card">
+                    <img src="./img/Saarland_silhouette.svg" alt="" >
+
+                    <h2>Saarland</h2>
+                </a>
+                <a href="cities.html?region=Sachsen" class="region-card">
+                    <img src="./img/Sachsen_silhouette.svg" alt="" >
+
+                    <h2>Sachsen</h2>
+                </a>
+                <a href="cities.html?region=Sachsen-Anhalt" class="region-card">
+                    <img src="./img/Sachsen-Anhalt_silhouette.svg" alt="" >
+
+                    <h2>Sachsen-Anhalt</h2>
+                </a>
+                <a href="cities.html?region=Schleswig-Holstein" class="region-card">
+                    <img src="./img/Schleswig Holstein_silhouette.svg" alt="" >
+
+                    <h2>Schleswig-Holstein</h2>
+                </a>
+                <a href="cities.html?region=Thüringen" class="region-card">
+                    <img src="./img/Thüringen_silhouette.svg" alt="" >
+
+                    <h2>Thüringen</h2>
+                </a>
+
+                <a href="cities.html?region=Berlin" class="region-card">
+                    <img src="./img/Berlin_silhouette.svg" alt="" >
+
+                    <h2>Berlin</h2>
+                </a>
+                <a href="cities.html?region=Hamburg" class="region-card">
+                    <img src="./img/Hamburg_silhouette.svg" alt="" >
+
+                    <h2>Hamburg</h2>
+                </a>
+                <a href="cities.html?region=Bremen" class="region-card">
+                    <img src="./img/Bremen_silhouette.svg" alt="" >
+
+                    <h2>Bremen</h2>
+                </a>
+
+                
+    </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Versity</h3>
+                        <p>Hochwertige 3D-Modelle deutscher Architektur für Ihre kreativen Projekte.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Produkte</a></li>
+                            <li><a href="regions.html">Regionen</a></li>
+                            <li><a href="#about">Über uns</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Kundenservice</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Versand</a></li>
+                            <li><a href="#">Rückgaben</a></li>
+                            <li><a href="#">Zahlungsmethoden</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Kontakt</h3>
+                        <ul>
+                            <li>Email: info@versity.de</li>
+                            <li>Telefon: +49 30 1234567</li>
+                            <li>Adresse: Musterstraße 123, Berlin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Versity. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+            
+        </footer>
+        <script src="js/modal.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/icon.js"></script>    
+        
